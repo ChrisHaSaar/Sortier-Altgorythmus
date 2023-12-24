@@ -70,15 +70,14 @@ def main():
         sort_num = random.sample(range(1, range_num + 1), item_range)
         print(f"Generierte Zahlenliste: {sort_num}")
 
+        # Abschnitt 03.2: Auswahl des Sortieralgorithmus
         while True:
-            # Abschnitt 03.2: Auswahl des Sortieralgorithmus
-            print('''\nWählen Sie einen Sortieralgorithmus:
-1. Bubble Sort
-2. Selection Sort
-3. Insertion Sort
-Drücken Sie eine andere Taste, um das Programm zu beenden.''')
+            print("\nWählen Sie einen Sortieralgorithmus. Hier sind die Optionen:")
+            print("1. Bubble Sort: Ein einfacher Algorithmus, der wiederholt durch die Liste geht und benachbarte Elemente vertauscht. Gut für kleinere Listen.")
+            print("2. Selection Sort: Sucht schrittweise das kleinste Element aus dem unsortierten Teil der Liste und fügt es an der richtigen Stelle im sortierten Teil ein. Effizient bei kleinen bis mittelgroßen Listen.")
+            print("3. Insertion Sort: Fügt jedes Element der Liste nacheinander in den bereits sortierten Teil ein. Besonders effizient, wenn die Liste fast sortiert ist.")
 
-            choice = input("Ihre Wahl: ")
+            choice = input("Ihre Wahl (1, 2 oder 3): ")
             if choice not in ['1', '2', '3']:
                 beenden_check()
                 continue
@@ -92,6 +91,7 @@ Drücken Sie eine andere Taste, um das Programm zu beenden.''')
                 insertion_sort(sorted_arr)
 
             print(f"Sortierte Liste: {sorted_arr}\n")
+            break
 
 if __name__ == "__main__":
     main()
