@@ -73,9 +73,9 @@ def main():
         # Abschnitt 03.2: Auswahl des Sortieralgorithmus
         while True:
             print("\nWählen Sie einen Sortieralgorithmus. Hier sind die Optionen:")
-            print("1. Bubble Sort: Ein einfacher Algorithmus, der wiederholt durch die Liste geht und benachbarte Elemente vertauscht. Gut für kleinere Listen.")
-            print("2. Selection Sort: Sucht schrittweise das kleinste Element aus dem unsortierten Teil der Liste und fügt es an der richtigen Stelle im sortierten Teil ein. Effizient bei kleinen bis mittelgroßen Listen.")
-            print("3. Insertion Sort: Fügt jedes Element der Liste nacheinander in den bereits sortierten Teil ein. Besonders effizient, wenn die Liste fast sortiert ist.")
+            print("1. Bubble Sortierung: Ein einfacher Algorithmus, der wiederholt durch die Liste geht und benachbarte Elemente vertauscht. Gut für kleinere Listen.")
+            print("2. Selection Sortierung: Sucht schrittweise das kleinste Element aus dem unsortierten Teil der Liste und fügt es an der richtigen Stelle im sortierten Teil ein. Effizient bei kleinen bis mittelgroßen Listen.")
+            print("3. Insertion Sortierung: Fügt jedes Element der Liste nacheinander in den bereits sortierten Teil ein. Besonders effizient, wenn die Liste fast sortiert ist.")
 
             choice = input("Ihre Wahl (1, 2 oder 3): ")
             if choice not in ['1', '2', '3']:
